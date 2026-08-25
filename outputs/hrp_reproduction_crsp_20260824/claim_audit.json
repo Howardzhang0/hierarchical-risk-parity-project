@@ -1,0 +1,38 @@
+[
+  {
+    "actual": 1.6887718640429927,
+    "actual_display": "1.69%",
+    "claim": "HRP out-of-sample variance reduction vs IVP",
+    "status": "not_reproduced",
+    "target": 32.0,
+    "target_display": "32.0%",
+    "unit": "%"
+  },
+  {
+    "actual": 65.25736348556215,
+    "actual_display": "65.26x",
+    "claim": "legacy pandas to stack/index traversal speedup",
+    "status": "reproduced",
+    "target": 4.0,
+    "target_display": "4.0x",
+    "unit": "x"
+  },
+  {
+    "actual": -0.7596756884035676,
+    "actual_display": "-0.76%",
+    "claim": "VLSTAR risk-controlled HRP Sharpe improvement",
+    "status": "not_reproduced",
+    "target": 20.0,
+    "target_display": "20.0%",
+    "unit": "%"
+  },
+  {
+    "actual": 13.37795933660473,
+    "actual_display": "13.38%",
+    "claim": "VLSTAR risk-controlled HRP 95% ES reduction",
+    "status": "reproduced",
+    "target": 12.0,
+    "target_display": "12.0%",
+    "unit": "%"
+  }
+]

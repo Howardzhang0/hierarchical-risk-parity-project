@@ -1,0 +1,974 @@
+{
+  "actual_crsp": {
+    "ci_lower": 59.888430060106664,
+    "ci_upper": 79.73644124118444,
+    "median_legacy_over_stack": 65.25736348556215,
+    "median_recursive_over_stack": 0.8377188933873145,
+    "n_assets": 31,
+    "results": [
+      {
+        "environment": {
+          "garbage_collection_during_warmup_and_timing": "disabled",
+          "machine": "arm64",
+          "numpy": "2.1.3",
+          "pandas": "2.2.3",
+          "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+          "processor": "arm",
+          "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+          "python_implementation": "CPython",
+          "scipy": "1.15.3",
+          "timer": "time.perf_counter_ns"
+        },
+        "implementations": {
+          "legacy_pandas": {
+            "median_ns": 4001145.5,
+            "median_us": 4001.1455,
+            "p95_ns": 4324112.199999999,
+            "p95_us": 4324.1122
+          },
+          "recursive_dfs": {
+            "median_ns": 40104.0,
+            "median_us": 40.104,
+            "p95_ns": 49048.2,
+            "p95_us": 49.048199999999994
+          },
+          "stack_index_dfs": {
+            "median_ns": 48458.0,
+            "median_us": 48.458,
+            "p95_ns": 56627.1,
+            "p95_us": 56.6271
+          }
+        },
+        "leaf_order_equality_verified": true,
+        "linkage_method": "single",
+        "methodology": {
+          "equality_reference": "scipy.cluster.hierarchy.leaves_list",
+          "garbage_collection_disabled_equally": true,
+          "method_order": "seeded random permutation each round",
+          "speedup_definition": "baseline median_ns / stack_index_dfs median_ns",
+          "timed_samples_per_implementation": 200,
+          "warmups_per_implementation": 20
+        },
+        "n_assets": 31,
+        "n_features": 8,
+        "repetitions": 200,
+        "schema_version": 1,
+        "seed": 20260824,
+        "source": "provided",
+        "speedups": {
+          "legacy_pandas_over_stack_index": 82.56934871435057,
+          "recursive_dfs_over_stack_index": 0.8276032853192455
+        },
+        "warmups": 20,
+        "window_end": "2007-01-03T00:00:00"
+      },
+      {
+        "environment": {
+          "garbage_collection_during_warmup_and_timing": "disabled",
+          "machine": "arm64",
+          "numpy": "2.1.3",
+          "pandas": "2.2.3",
+          "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+          "processor": "arm",
+          "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+          "python_implementation": "CPython",
+          "scipy": "1.15.3",
+          "timer": "time.perf_counter_ns"
+        },
+        "implementations": {
+          "legacy_pandas": {
+            "median_ns": 2960917.0,
+            "median_us": 2960.917,
+            "p95_ns": 3274867.0,
+            "p95_us": 3274.867
+          },
+          "recursive_dfs": {
+            "median_ns": 39937.5,
+            "median_us": 39.9375,
+            "p95_ns": 47327.39999999999,
+            "p95_us": 47.32739999999999
+          },
+          "stack_index_dfs": {
+            "median_ns": 47354.5,
+            "median_us": 47.3545,
+            "p95_ns": 55362.84999999998,
+            "p95_us": 55.36284999999997
+          }
+        },
+        "leaf_order_equality_verified": true,
+        "linkage_method": "single",
+        "methodology": {
+          "equality_reference": "scipy.cluster.hierarchy.leaves_list",
+          "garbage_collection_disabled_equally": true,
+          "method_order": "seeded random permutation each round",
+          "speedup_definition": "baseline median_ns / stack_index_dfs median_ns",
+          "timed_samples_per_implementation": 200,
+          "warmups_per_implementation": 20
+        },
+        "n_assets": 31,
+        "n_features": 8,
+        "repetitions": 200,
+        "schema_version": 1,
+        "seed": 20260825,
+        "source": "provided",
+        "speedups": {
+          "legacy_pandas_over_stack_index": 62.526623657730525,
+          "recursive_dfs_over_stack_index": 0.8433728579121308
+        },
+        "warmups": 20,
+        "window_end": "2008-09-23T00:00:00"
+      },
+      {
+        "environment": {
+          "garbage_collection_during_warmup_and_timing": "disabled",
+          "machine": "arm64",
+          "numpy": "2.1.3",
+          "pandas": "2.2.3",
+          "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+          "processor": "arm",
+          "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+          "python_implementation": "CPython",
+          "scipy": "1.15.3",
+          "timer": "time.perf_counter_ns"
+        },
+        "implementations": {
+          "legacy_pandas": {
+            "median_ns": 3939854.0,
+            "median_us": 3939.854,
+            "p95_ns": 4344800.299999999,
+            "p95_us": 4344.800299999999
+          },
+          "recursive_dfs": {
+            "median_ns": 39895.5,
+            "median_us": 39.8955,
+            "p95_ns": 46855.899999999994,
+            "p95_us": 46.85589999999999
+          },
+          "stack_index_dfs": {
+            "median_ns": 48270.5,
+            "median_us": 48.2705,
+            "p95_ns": 56135.45,
+            "p95_us": 56.13545
+          }
+        },
+        "leaf_order_equality_verified": true,
+        "linkage_method": "single",
+        "methodology": {
+          "equality_reference": "scipy.cluster.hierarchy.leaves_list",
+          "garbage_collection_disabled_equally": true,
+          "method_order": "seeded random permutation each round",
+          "speedup_definition": "baseline median_ns / stack_index_dfs median_ns",
+          "timed_samples_per_implementation": 200,
+          "warmups_per_implementation": 20
+        },
+        "n_assets": 31,
+        "n_features": 8,
+        "repetitions": 200,
+        "schema_version": 1,
+        "seed": 20260826,
+        "source": "provided",
+        "speedups": {
+          "legacy_pandas_over_stack_index": 81.62032711490455,
+          "recursive_dfs_over_stack_index": 0.8264985860929553
+        },
+        "warmups": 20,
+        "window_end": "2010-06-15T00:00:00"
+      },
+      {
+        "environment": {
+          "garbage_collection_during_warmup_and_timing": "disabled",
+          "machine": "arm64",
+          "numpy": "2.1.3",
+          "pandas": "2.2.3",
+          "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+          "processor": "arm",
+          "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+          "python_implementation": "CPython",
+          "scipy": "1.15.3",
+          "timer": "time.perf_counter_ns"
+        },
+        "implementations": {
+          "legacy_pandas": {
+            "median_ns": 3169333.5,
+            "median_us": 3169.3335,
+            "p95_ns": 3607360.1,
+            "p95_us": 3607.3601
+          },
+          "recursive_dfs": {
+            "median_ns": 38958.5,
+            "median_us": 38.9585,
+            "p95_ns": 48300.299999999996,
+            "p95_us": 48.30029999999999
+          },
+          "stack_index_dfs": {
+            "median_ns": 48187.5,
+            "median_us": 48.1875,
+            "p95_ns": 54970.49999999999,
+            "p95_us": 54.970499999999994
+          }
+        },
+        "leaf_order_equality_verified": true,
+        "linkage_method": "single",
+        "methodology": {
+          "equality_reference": "scipy.cluster.hierarchy.leaves_list",
+          "garbage_collection_disabled_equally": true,
+          "method_order": "seeded random permutation each round",
+          "speedup_definition": "baseline median_ns / stack_index_dfs median_ns",
+          "timed_samples_per_implementation": 200,
+          "warmups_per_implementation": 20
+        },
+        "n_assets": 31,
+        "n_features": 8,
+        "repetitions": 200,
+        "schema_version": 1,
+        "seed": 20260827,
+        "source": "provided",
+        "speedups": {
+          "legacy_pandas_over_stack_index": 65.77086381322957,
+          "recursive_dfs_over_stack_index": 0.8084773022049286
+        },
+        "warmups": 20,
+        "window_end": "2012-03-06T00:00:00"
+      },
+      {
+        "environment": {
+          "garbage_collection_during_warmup_and_timing": "disabled",
+          "machine": "arm64",
+          "numpy": "2.1.3",
+          "pandas": "2.2.3",
+          "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+          "processor": "arm",
+          "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+          "python_implementation": "CPython",
+          "scipy": "1.15.3",
+          "timer": "time.perf_counter_ns"
+        },
+        "implementations": {
+          "legacy_pandas": {
+            "median_ns": 3972666.5,
+            "median_us": 3972.6665,
+            "p95_ns": 4446265.2,
+            "p95_us": 4446.2652
+          },
+          "recursive_dfs": {
+            "median_ns": 40646.0,
+            "median_us": 40.646,
+            "p95_ns": 50961.05,
+            "p95_us": 50.96105
+          },
+          "stack_index_dfs": {
+            "median_ns": 48750.0,
+            "median_us": 48.75,
+            "p95_ns": 59553.49999999999,
+            "p95_us": 59.55349999999999
+          }
+        },
+        "leaf_order_equality_verified": true,
+        "linkage_method": "single",
+        "methodology": {
+          "equality_reference": "scipy.cluster.hierarchy.leaves_list",
+          "garbage_collection_disabled_equally": true,
+          "method_order": "seeded random permutation each round",
+          "speedup_definition": "baseline median_ns / stack_index_dfs median_ns",
+          "timed_samples_per_implementation": 200,
+          "warmups_per_implementation": 20
+        },
+        "n_assets": 31,
+        "n_features": 8,
+        "repetitions": 200,
+        "schema_version": 1,
+        "seed": 20260828,
+        "source": "provided",
+        "speedups": {
+          "legacy_pandas_over_stack_index": 81.49059487179487,
+          "recursive_dfs_over_stack_index": 0.8337641025641026
+        },
+        "warmups": 20,
+        "window_end": "2013-11-25T00:00:00"
+      },
+      {
+        "environment": {
+          "garbage_collection_during_warmup_and_timing": "disabled",
+          "machine": "arm64",
+          "numpy": "2.1.3",
+          "pandas": "2.2.3",
+          "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+          "processor": "arm",
+          "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+          "python_implementation": "CPython",
+          "scipy": "1.15.3",
+          "timer": "time.perf_counter_ns"
+        },
+        "implementations": {
+          "legacy_pandas": {
+            "median_ns": 3795125.0,
+            "median_us": 3795.125,
+            "p95_ns": 4648285.699999999,
+            "p95_us": 4648.285699999999
+          },
+          "recursive_dfs": {
+            "median_ns": 41750.5,
+            "median_us": 41.7505,
+            "p95_ns": 58881.25,
+            "p95_us": 58.88125
+          },
+          "stack_index_dfs": {
+            "median_ns": 48666.5,
+            "median_us": 48.6665,
+            "p95_ns": 65979.79999999999,
+            "p95_us": 65.97979999999998
+          }
+        },
+        "leaf_order_equality_verified": true,
+        "linkage_method": "single",
+        "methodology": {
+          "equality_reference": "scipy.cluster.hierarchy.leaves_list",
+          "garbage_collection_disabled_equally": true,
+          "method_order": "seeded random permutation each round",
+          "speedup_definition": "baseline median_ns / stack_index_dfs median_ns",
+          "timed_samples_per_implementation": 200,
+          "warmups_per_implementation": 20
+        },
+        "n_assets": 31,
+        "n_features": 8,
+        "repetitions": 200,
+        "schema_version": 1,
+        "seed": 20260829,
+        "source": "provided",
+        "speedups": {
+          "legacy_pandas_over_stack_index": 77.982287610574,
+          "recursive_dfs_over_stack_index": 0.8578899242805627
+        },
+        "warmups": 20,
+        "window_end": "2015-08-19T00:00:00"
+      },
+      {
+        "environment": {
+          "garbage_collection_during_warmup_and_timing": "disabled",
+          "machine": "arm64",
+          "numpy": "2.1.3",
+          "pandas": "2.2.3",
+          "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+          "processor": "arm",
+          "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+          "python_implementation": "CPython",
+          "scipy": "1.15.3",
+          "timer": "time.perf_counter_ns"
+        },
+        "implementations": {
+          "legacy_pandas": {
+            "median_ns": 2791958.5,
+            "median_us": 2791.9585,
+            "p95_ns": 3199320.4999999986,
+            "p95_us": 3199.3204999999984
+          },
+          "recursive_dfs": {
+            "median_ns": 39938.0,
+            "median_us": 39.938,
+            "p95_ns": 49962.15,
+            "p95_us": 49.96215
+          },
+          "stack_index_dfs": {
+            "median_ns": 47416.5,
+            "median_us": 47.4165,
+            "p95_ns": 58510.399999999994,
+            "p95_us": 58.5104
+          }
+        },
+        "leaf_order_equality_verified": true,
+        "linkage_method": "single",
+        "methodology": {
+          "equality_reference": "scipy.cluster.hierarchy.leaves_list",
+          "garbage_collection_disabled_equally": true,
+          "method_order": "seeded random permutation each round",
+          "speedup_definition": "baseline median_ns / stack_index_dfs median_ns",
+          "timed_samples_per_implementation": 200,
+          "warmups_per_implementation": 20
+        },
+        "n_assets": 31,
+        "n_features": 8,
+        "repetitions": 200,
+        "schema_version": 1,
+        "seed": 20260830,
+        "source": "provided",
+        "speedups": {
+          "legacy_pandas_over_stack_index": 58.88158130608544,
+          "recursive_dfs_over_stack_index": 0.8422806407052398
+        },
+        "warmups": 20,
+        "window_end": "2017-05-10T00:00:00"
+      },
+      {
+        "environment": {
+          "garbage_collection_during_warmup_and_timing": "disabled",
+          "machine": "arm64",
+          "numpy": "2.1.3",
+          "pandas": "2.2.3",
+          "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+          "processor": "arm",
+          "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+          "python_implementation": "CPython",
+          "scipy": "1.15.3",
+          "timer": "time.perf_counter_ns"
+        },
+        "implementations": {
+          "legacy_pandas": {
+            "median_ns": 3271750.0,
+            "median_us": 3271.75,
+            "p95_ns": 3606871.45,
+            "p95_us": 3606.87145
+          },
+          "recursive_dfs": {
+            "median_ns": 39979.0,
+            "median_us": 39.979,
+            "p95_ns": 48590.2,
+            "p95_us": 48.590199999999996
+          },
+          "stack_index_dfs": {
+            "median_ns": 48187.5,
+            "median_us": 48.1875,
+            "p95_ns": 55252.05,
+            "p95_us": 55.252050000000004
+          }
+        },
+        "leaf_order_equality_verified": true,
+        "linkage_method": "single",
+        "methodology": {
+          "equality_reference": "scipy.cluster.hierarchy.leaves_list",
+          "garbage_collection_disabled_equally": true,
+          "method_order": "seeded random permutation each round",
+          "speedup_definition": "baseline median_ns / stack_index_dfs median_ns",
+          "timed_samples_per_implementation": 200,
+          "warmups_per_implementation": 20
+        },
+        "n_assets": 31,
+        "n_features": 8,
+        "repetitions": 200,
+        "schema_version": 1,
+        "seed": 20260831,
+        "source": "provided",
+        "speedups": {
+          "legacy_pandas_over_stack_index": 67.89623865110246,
+          "recursive_dfs_over_stack_index": 0.8296549935149157
+        },
+        "warmups": 20,
+        "window_end": "2019-02-01T00:00:00"
+      },
+      {
+        "environment": {
+          "garbage_collection_during_warmup_and_timing": "disabled",
+          "machine": "arm64",
+          "numpy": "2.1.3",
+          "pandas": "2.2.3",
+          "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+          "processor": "arm",
+          "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+          "python_implementation": "CPython",
+          "scipy": "1.15.3",
+          "timer": "time.perf_counter_ns"
+        },
+        "implementations": {
+          "legacy_pandas": {
+            "median_ns": 3075896.0,
+            "median_us": 3075.896,
+            "p95_ns": 3668706.5499999993,
+            "p95_us": 3668.7065499999994
+          },
+          "recursive_dfs": {
+            "median_ns": 43708.0,
+            "median_us": 43.708,
+            "p95_ns": 54055.94999999997,
+            "p95_us": 54.05594999999997
+          },
+          "stack_index_dfs": {
+            "median_ns": 51333.0,
+            "median_us": 51.333,
+            "p95_ns": 62723.549999999996,
+            "p95_us": 62.723549999999996
+          }
+        },
+        "leaf_order_equality_verified": true,
+        "linkage_method": "single",
+        "methodology": {
+          "equality_reference": "scipy.cluster.hierarchy.leaves_list",
+          "garbage_collection_disabled_equally": true,
+          "method_order": "seeded random permutation each round",
+          "speedup_definition": "baseline median_ns / stack_index_dfs median_ns",
+          "timed_samples_per_implementation": 200,
+          "warmups_per_implementation": 20
+        },
+        "n_assets": 31,
+        "n_features": 8,
+        "repetitions": 200,
+        "schema_version": 1,
+        "seed": 20260832,
+        "source": "provided",
+        "speedups": {
+          "legacy_pandas_over_stack_index": 59.920441041824944,
+          "recursive_dfs_over_stack_index": 0.8514600744160676
+        },
+        "warmups": 20,
+        "window_end": "2020-10-21T00:00:00"
+      },
+      {
+        "environment": {
+          "garbage_collection_during_warmup_and_timing": "disabled",
+          "machine": "arm64",
+          "numpy": "2.1.3",
+          "pandas": "2.2.3",
+          "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+          "processor": "arm",
+          "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+          "python_implementation": "CPython",
+          "scipy": "1.15.3",
+          "timer": "time.perf_counter_ns"
+        },
+        "implementations": {
+          "legacy_pandas": {
+            "median_ns": 2853146.0,
+            "median_us": 2853.146,
+            "p95_ns": 3659883.349999998,
+            "p95_us": 3659.8833499999982
+          },
+          "recursive_dfs": {
+            "median_ns": 40812.5,
+            "median_us": 40.8125,
+            "p95_ns": 53162.199999999975,
+            "p95_us": 53.16219999999998
+          },
+          "stack_index_dfs": {
+            "median_ns": 47666.5,
+            "median_us": 47.6665,
+            "p95_ns": 62727.7,
+            "p95_us": 62.7277
+          }
+        },
+        "leaf_order_equality_verified": true,
+        "linkage_method": "single",
+        "methodology": {
+          "equality_reference": "scipy.cluster.hierarchy.leaves_list",
+          "garbage_collection_disabled_equally": true,
+          "method_order": "seeded random permutation each round",
+          "speedup_definition": "baseline median_ns / stack_index_dfs median_ns",
+          "timed_samples_per_implementation": 200,
+          "warmups_per_implementation": 20
+        },
+        "n_assets": 31,
+        "n_features": 8,
+        "repetitions": 200,
+        "schema_version": 1,
+        "seed": 20260833,
+        "source": "provided",
+        "speedups": {
+          "legacy_pandas_over_stack_index": 59.856419078388384,
+          "recursive_dfs_over_stack_index": 0.856209287445061
+        },
+        "warmups": 20,
+        "window_end": "2022-07-15T00:00:00"
+      },
+      {
+        "environment": {
+          "garbage_collection_during_warmup_and_timing": "disabled",
+          "machine": "arm64",
+          "numpy": "2.1.3",
+          "pandas": "2.2.3",
+          "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+          "processor": "arm",
+          "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+          "python_implementation": "CPython",
+          "scipy": "1.15.3",
+          "timer": "time.perf_counter_ns"
+        },
+        "implementations": {
+          "legacy_pandas": {
+            "median_ns": 3075333.5,
+            "median_us": 3075.3335,
+            "p95_ns": 3379923.55,
+            "p95_us": 3379.92355
+          },
+          "recursive_dfs": {
+            "median_ns": 39979.5,
+            "median_us": 39.9795,
+            "p95_ns": 47252.1,
+            "p95_us": 47.2521
+          },
+          "stack_index_dfs": {
+            "median_ns": 47500.0,
+            "median_us": 47.5,
+            "p95_ns": 57277.09999999999,
+            "p95_us": 57.27709999999999
+          }
+        },
+        "leaf_order_equality_verified": true,
+        "linkage_method": "single",
+        "methodology": {
+          "equality_reference": "scipy.cluster.hierarchy.leaves_list",
+          "garbage_collection_disabled_equally": true,
+          "method_order": "seeded random permutation each round",
+          "speedup_definition": "baseline median_ns / stack_index_dfs median_ns",
+          "timed_samples_per_implementation": 200,
+          "warmups_per_implementation": 20
+        },
+        "n_assets": 31,
+        "n_features": 8,
+        "repetitions": 200,
+        "schema_version": 1,
+        "seed": 20260834,
+        "source": "provided",
+        "speedups": {
+          "legacy_pandas_over_stack_index": 64.74386315789474,
+          "recursive_dfs_over_stack_index": 0.8416736842105264
+        },
+        "warmups": 20,
+        "window_end": "2024-04-08T00:00:00"
+      },
+      {
+        "environment": {
+          "garbage_collection_during_warmup_and_timing": "disabled",
+          "machine": "arm64",
+          "numpy": "2.1.3",
+          "pandas": "2.2.3",
+          "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+          "processor": "arm",
+          "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+          "python_implementation": "CPython",
+          "scipy": "1.15.3",
+          "timer": "time.perf_counter_ns"
+        },
+        "implementations": {
+          "legacy_pandas": {
+            "median_ns": 2705375.0,
+            "median_us": 2705.375,
+            "p95_ns": 3063793.75,
+            "p95_us": 3063.79375
+          },
+          "recursive_dfs": {
+            "median_ns": 39083.5,
+            "median_us": 39.0835,
+            "p95_ns": 45141.7,
+            "p95_us": 45.1417
+          },
+          "stack_index_dfs": {
+            "median_ns": 47542.0,
+            "median_us": 47.542,
+            "p95_ns": 57672.89999999999,
+            "p95_us": 57.672899999999984
+          }
+        },
+        "leaf_order_equality_verified": true,
+        "linkage_method": "single",
+        "methodology": {
+          "equality_reference": "scipy.cluster.hierarchy.leaves_list",
+          "garbage_collection_disabled_equally": true,
+          "method_order": "seeded random permutation each round",
+          "speedup_definition": "baseline median_ns / stack_index_dfs median_ns",
+          "timed_samples_per_implementation": 200,
+          "warmups_per_implementation": 20
+        },
+        "n_assets": 31,
+        "n_features": 8,
+        "repetitions": 200,
+        "schema_version": 1,
+        "seed": 20260835,
+        "source": "provided",
+        "speedups": {
+          "legacy_pandas_over_stack_index": 56.904947204577006,
+          "recursive_dfs_over_stack_index": 0.8220836313154685
+        },
+        "warmups": 20,
+        "window_end": "2025-12-31T00:00:00"
+      }
+    ],
+    "tree_count": 12
+  },
+  "methodology": "linkage to leaf order only; exact scipy equality checked before timing",
+  "synthetic": {
+    "asset_counts": [
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "results": [
+      {
+        "environment": {
+          "garbage_collection_during_warmup_and_timing": "disabled",
+          "machine": "arm64",
+          "numpy": "2.1.3",
+          "pandas": "2.2.3",
+          "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+          "processor": "arm",
+          "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+          "python_implementation": "CPython",
+          "scipy": "1.15.3",
+          "timer": "time.perf_counter_ns"
+        },
+        "implementations": {
+          "legacy_pandas": {
+            "median_ns": 4036979.0,
+            "median_us": 4036.979,
+            "p95_ns": 4372481.25,
+            "p95_us": 4372.48125
+          },
+          "recursive_dfs": {
+            "median_ns": 40666.5,
+            "median_us": 40.6665,
+            "p95_ns": 50300.3,
+            "p95_us": 50.3003
+          },
+          "stack_index_dfs": {
+            "median_ns": 48062.0,
+            "median_us": 48.062,
+            "p95_ns": 59553.84999999999,
+            "p95_us": 59.55384999999999
+          }
+        },
+        "leaf_order_equality_verified": true,
+        "linkage_method": "single",
+        "methodology": {
+          "equality_reference": "scipy.cluster.hierarchy.leaves_list",
+          "garbage_collection_disabled_equally": true,
+          "method_order": "seeded random permutation each round",
+          "speedup_definition": "baseline median_ns / stack_index_dfs median_ns",
+          "timed_samples_per_implementation": 100,
+          "warmups_per_implementation": 20
+        },
+        "n_assets": 32,
+        "n_features": 8,
+        "repetitions": 100,
+        "schema_version": 1,
+        "seed": 6568815524228417161,
+        "source": "synthetic",
+        "speedups": {
+          "legacy_pandas_over_stack_index": 83.99523532104365,
+          "recursive_dfs_over_stack_index": 0.8461258374599475
+        },
+        "warmups": 20
+      },
+      {
+        "environment": {
+          "garbage_collection_during_warmup_and_timing": "disabled",
+          "machine": "arm64",
+          "numpy": "2.1.3",
+          "pandas": "2.2.3",
+          "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+          "processor": "arm",
+          "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+          "python_implementation": "CPython",
+          "scipy": "1.15.3",
+          "timer": "time.perf_counter_ns"
+        },
+        "implementations": {
+          "legacy_pandas": {
+            "median_ns": 7307104.5,
+            "median_us": 7307.1045,
+            "p95_ns": 7594268.75,
+            "p95_us": 7594.26875
+          },
+          "recursive_dfs": {
+            "median_ns": 68625.5,
+            "median_us": 68.6255,
+            "p95_ns": 79949.99999999999,
+            "p95_us": 79.94999999999999
+          },
+          "stack_index_dfs": {
+            "median_ns": 81896.0,
+            "median_us": 81.896,
+            "p95_ns": 90812.8,
+            "p95_us": 90.81280000000001
+          }
+        },
+        "leaf_order_equality_verified": true,
+        "linkage_method": "single",
+        "methodology": {
+          "equality_reference": "scipy.cluster.hierarchy.leaves_list",
+          "garbage_collection_disabled_equally": true,
+          "method_order": "seeded random permutation each round",
+          "speedup_definition": "baseline median_ns / stack_index_dfs median_ns",
+          "timed_samples_per_implementation": 100,
+          "warmups_per_implementation": 20
+        },
+        "n_assets": 64,
+        "n_features": 8,
+        "repetitions": 100,
+        "schema_version": 1,
+        "seed": 14080350928457639799,
+        "source": "synthetic",
+        "speedups": {
+          "legacy_pandas_over_stack_index": 89.22419287877308,
+          "recursive_dfs_over_stack_index": 0.8379591188824851
+        },
+        "warmups": 20
+      },
+      {
+        "environment": {
+          "garbage_collection_during_warmup_and_timing": "disabled",
+          "machine": "arm64",
+          "numpy": "2.1.3",
+          "pandas": "2.2.3",
+          "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+          "processor": "arm",
+          "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+          "python_implementation": "CPython",
+          "scipy": "1.15.3",
+          "timer": "time.perf_counter_ns"
+        },
+        "implementations": {
+          "legacy_pandas": {
+            "median_ns": 15544041.5,
+            "median_us": 15544.0415,
+            "p95_ns": 15851678.85,
+            "p95_us": 15851.67885
+          },
+          "recursive_dfs": {
+            "median_ns": 139042.0,
+            "median_us": 139.042,
+            "p95_ns": 158002.05,
+            "p95_us": 158.00205
+          },
+          "stack_index_dfs": {
+            "median_ns": 152937.5,
+            "median_us": 152.9375,
+            "p95_ns": 175662.5,
+            "p95_us": 175.6625
+          }
+        },
+        "leaf_order_equality_verified": true,
+        "linkage_method": "single",
+        "methodology": {
+          "equality_reference": "scipy.cluster.hierarchy.leaves_list",
+          "garbage_collection_disabled_equally": true,
+          "method_order": "seeded random permutation each round",
+          "speedup_definition": "baseline median_ns / stack_index_dfs median_ns",
+          "timed_samples_per_implementation": 100,
+          "warmups_per_implementation": 20
+        },
+        "n_assets": 128,
+        "n_features": 8,
+        "repetitions": 100,
+        "schema_version": 1,
+        "seed": 17747069262058580430,
+        "source": "synthetic",
+        "speedups": {
+          "legacy_pandas_over_stack_index": 101.63656068655497,
+          "recursive_dfs_over_stack_index": 0.9091426236207601
+        },
+        "warmups": 20
+      },
+      {
+        "environment": {
+          "garbage_collection_during_warmup_and_timing": "disabled",
+          "machine": "arm64",
+          "numpy": "2.1.3",
+          "pandas": "2.2.3",
+          "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+          "processor": "arm",
+          "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+          "python_implementation": "CPython",
+          "scipy": "1.15.3",
+          "timer": "time.perf_counter_ns"
+        },
+        "implementations": {
+          "legacy_pandas": {
+            "median_ns": 29493958.0,
+            "median_us": 29493.958,
+            "p95_ns": 30990127.4,
+            "p95_us": 30990.127399999998
+          },
+          "recursive_dfs": {
+            "median_ns": 249395.5,
+            "median_us": 249.3955,
+            "p95_ns": 283877.3999999999,
+            "p95_us": 283.8773999999999
+          },
+          "stack_index_dfs": {
+            "median_ns": 295687.5,
+            "median_us": 295.6875,
+            "p95_ns": 339064.6,
+            "p95_us": 339.0646
+          }
+        },
+        "leaf_order_equality_verified": true,
+        "linkage_method": "single",
+        "methodology": {
+          "equality_reference": "scipy.cluster.hierarchy.leaves_list",
+          "garbage_collection_disabled_equally": true,
+          "method_order": "seeded random permutation each round",
+          "speedup_definition": "baseline median_ns / stack_index_dfs median_ns",
+          "timed_samples_per_implementation": 100,
+          "warmups_per_implementation": 20
+        },
+        "n_assets": 256,
+        "n_features": 8,
+        "repetitions": 100,
+        "schema_version": 1,
+        "seed": 12338898572505019232,
+        "source": "synthetic",
+        "speedups": {
+          "legacy_pandas_over_stack_index": 99.74705728175861,
+          "recursive_dfs_over_stack_index": 0.8434428239272881
+        },
+        "warmups": 20
+      },
+      {
+        "environment": {
+          "garbage_collection_during_warmup_and_timing": "disabled",
+          "machine": "arm64",
+          "numpy": "2.1.3",
+          "pandas": "2.2.3",
+          "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+          "processor": "arm",
+          "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+          "python_implementation": "CPython",
+          "scipy": "1.15.3",
+          "timer": "time.perf_counter_ns"
+        },
+        "implementations": {
+          "legacy_pandas": {
+            "median_ns": 55703063.0,
+            "median_us": 55703.063,
+            "p95_ns": 61414319.4,
+            "p95_us": 61414.3194
+          },
+          "recursive_dfs": {
+            "median_ns": 550229.5,
+            "median_us": 550.2295,
+            "p95_ns": 653929.5,
+            "p95_us": 653.9295
+          },
+          "stack_index_dfs": {
+            "median_ns": 608771.0,
+            "median_us": 608.771,
+            "p95_ns": 674506.25,
+            "p95_us": 674.50625
+          }
+        },
+        "leaf_order_equality_verified": true,
+        "linkage_method": "single",
+        "methodology": {
+          "equality_reference": "scipy.cluster.hierarchy.leaves_list",
+          "garbage_collection_disabled_equally": true,
+          "method_order": "seeded random permutation each round",
+          "speedup_definition": "baseline median_ns / stack_index_dfs median_ns",
+          "timed_samples_per_implementation": 100,
+          "warmups_per_implementation": 20
+        },
+        "n_assets": 512,
+        "n_features": 8,
+        "repetitions": 100,
+        "schema_version": 1,
+        "seed": 11794865870723547490,
+        "source": "synthetic",
+        "speedups": {
+          "legacy_pandas_over_stack_index": 91.50084843069068,
+          "recursive_dfs_over_stack_index": 0.9038365822287855
+        },
+        "warmups": 20
+      }
+    ],
+    "schema_version": 1,
+    "seed": 20260824,
+    "speedup_definition": "baseline median_ns / stack_index_dfs median_ns"
+  }
+}

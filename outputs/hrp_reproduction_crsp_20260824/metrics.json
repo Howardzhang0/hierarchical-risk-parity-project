@@ -1,0 +1,134 @@
+{
+  "common_end": "2025-12-31T00:00:00",
+  "common_observations": 4005,
+  "common_start": "2010-02-01T00:00:00",
+  "comparisons": {
+    "adaptive_calendar_hrp_vs_calendar_hrp": {
+      "baseline": {
+        "annual_return": 0.1452322653371564,
+        "annual_volatility": 0.14165254953617554,
+        "expected_shortfall_95": 0.020907711707956078,
+        "max_drawdown": 0.30797136838318584,
+        "observations": 4005,
+        "sharpe": 1.0252711003981378,
+        "var_95": 0.012517817623975575
+      },
+      "candidate": {
+        "annual_return": 0.1458466619469664,
+        "annual_volatility": 0.14021446877543353,
+        "expected_shortfall_95": 0.02062405665618666,
+        "max_drawdown": 0.2940601072747532,
+        "observations": 4005,
+        "sharpe": 1.0401684164317833,
+        "var_95": 0.012602078215188595
+      },
+      "sharpe_improvement_pct": 1.4530123815896518,
+      "tail_risk_reduction_pct": 1.3567006075632808,
+      "volatility_reduction_pct": 1.0152169978237808
+    },
+    "vlstar_fully_invested_vs_calendar_hrp": {
+      "baseline": {
+        "annual_return": 0.1452322653371564,
+        "annual_volatility": 0.14165254953617554,
+        "expected_shortfall_95": 0.020907711707956078,
+        "max_drawdown": 0.30797136838318584,
+        "observations": 4005,
+        "sharpe": 1.0252711003981378,
+        "var_95": 0.012517817623975575
+      },
+      "candidate": {
+        "annual_return": 0.14112034134100757,
+        "annual_volatility": 0.13956684836466804,
+        "expected_shortfall_95": 0.02057053703970532,
+        "max_drawdown": 0.29888909596747804,
+        "observations": 4005,
+        "sharpe": 1.0111308164835855,
+        "var_95": 0.01242262658966196
+      },
+      "sharpe_improvement_pct": -1.3791751185673073,
+      "tail_risk_reduction_pct": 1.6126808756524669,
+      "volatility_reduction_pct": 1.472406376261408
+    },
+    "vlstar_risk_controlled_vs_calendar_hrp": {
+      "baseline": {
+        "annual_return": 0.1452322653371564,
+        "annual_volatility": 0.14165254953617554,
+        "expected_shortfall_95": 0.020907711707956078,
+        "max_drawdown": 0.30797136838318584,
+        "observations": 4005,
+        "sharpe": 1.0252711003981378,
+        "var_95": 0.012517817623975575
+      },
+      "candidate": {
+        "annual_return": 0.12386297084699023,
+        "annual_volatility": 0.12173475933788819,
+        "expected_shortfall_95": 0.018110686537451168,
+        "max_drawdown": 0.2463037735745338,
+        "observations": 4005,
+        "sharpe": 1.0174823651081855,
+        "var_95": 0.011443437285483351
+      },
+      "sharpe_improvement_pct": -0.7596756884035676,
+      "tail_risk_reduction_pct": 13.37795933660473,
+      "volatility_reduction_pct": 14.061017795659724
+    }
+  },
+  "strategy_metrics": {
+    "adaptive_calendar_hrp": {
+      "annual_return": 0.1458466619469664,
+      "annual_turnover": 1.3041724519789986,
+      "annual_volatility": 0.14021446877543353,
+      "average_risky_weight": 1.0,
+      "expected_shortfall_95": 0.02062405665618666,
+      "gross_sharpe": 1.0582905466486003,
+      "max_drawdown": 0.2940601072747532,
+      "observations": 4005,
+      "rebalances": 191,
+      "sharpe": 1.0401684164317833,
+      "total_cost": 0.04045405293790387,
+      "var_95": 0.012602078215188595
+    },
+    "calendar_hrp": {
+      "annual_return": 0.1452322653371564,
+      "annual_turnover": 0.8810698336952447,
+      "annual_volatility": 0.14165254953617554,
+      "average_risky_weight": 1.0,
+      "expected_shortfall_95": 0.020907711707956078,
+      "gross_sharpe": 1.037233982083773,
+      "max_drawdown": 0.30797136838318584,
+      "observations": 4005,
+      "rebalances": 191,
+      "sharpe": 1.0252711003981378,
+      "total_cost": 0.027005433999598837,
+      "var_95": 0.012517817623975575
+    },
+    "vlstar_fully_invested": {
+      "annual_return": 0.14112034134100757,
+      "annual_turnover": 1.7259903406894779,
+      "annual_volatility": 0.13956684836466804,
+      "average_risky_weight": 1.0,
+      "expected_shortfall_95": 0.02057053703970532,
+      "gross_sharpe": 1.036158791942472,
+      "max_drawdown": 0.29888909596747804,
+      "observations": 4005,
+      "rebalances": 281,
+      "sharpe": 1.0111308164835855,
+      "total_cost": 0.054861835829058375,
+      "var_95": 0.01242262658966196
+    },
+    "vlstar_risk_controlled": {
+      "annual_return": 0.12386297084699023,
+      "annual_turnover": 2.133323937349035,
+      "annual_volatility": 0.12173475933788819,
+      "average_risky_weight": 0.9198007962770316,
+      "expected_shortfall_95": 0.018110686537451168,
+      "gross_sharpe": 1.0456632888976822,
+      "max_drawdown": 0.2463037735745338,
+      "observations": 4005,
+      "rebalances": 281,
+      "sharpe": 1.0174823651081855,
+      "total_cost": 0.053833485784844246,
+      "var_95": 0.011443437285483351
+    }
+  }
+}
