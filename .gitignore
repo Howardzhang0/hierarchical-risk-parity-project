@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.DS_Store
+.venv/
+build/
+dist/
+*.egg-info/
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+outputs/*
+!outputs/.gitkeep
+# Publish the locked headline report and compact supporting artifacts, but keep
+# bulky trial-level arrays, weights, and return panels out of version control.
+!outputs/hrp_reproduction_crsp_20260824/
+outputs/hrp_reproduction_crsp_20260824/*
+!outputs/hrp_reproduction_crsp_20260824/report.md
+!outputs/hrp_reproduction_crsp_20260824/claim_audit.json
+!outputs/hrp_reproduction_crsp_20260824/metrics.json
+!outputs/hrp_reproduction_crsp_20260824/monte_carlo_summary.csv
+!outputs/hrp_reproduction_crsp_20260824/tree_benchmark.json
+!outputs/hrp_reproduction_crsp_20260824/figures/
+outputs/hrp_reproduction_crsp_20260824/figures/*
+!outputs/hrp_reproduction_crsp_20260824/figures/*.png
+work/*
