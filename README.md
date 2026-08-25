@@ -1,4 +1,4 @@
-# Hierarchical Risk Parity reproduction lab
+# Hierarchical Risk Parity Reproduction Project
 
 This project is an auditable reproduction of three portfolio-research claims:
 
