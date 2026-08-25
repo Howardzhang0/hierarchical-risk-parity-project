@@ -1,0 +1,57 @@
+seed: 20260824
+
+data:
+  path: data/raw/crsp_daily_2006_2025.csv.gz
+  date_column: dlycaldt
+  id_column: permno
+  label_column: ticker
+  return_column: dlyret
+  market_cap_column: dlycap
+  minimum_coverage: 0.98
+  source: WRDS CRSP Annual Update Stock Version 2 Daily Stock File
+  wrds_query_id: 11596346
+  retrieved_at: "2026-08-24"
+
+covariance:
+  estimator: ledoit_wolf
+  eigenvalue_floor: 1.0e-10
+
+hrp:
+  linkage_method: single
+  distance_mode: original
+
+monte_carlo:
+  factors: 5
+  copula_df: 6
+  train_observations: 252
+  test_observations: 252
+  rebalance_every: 21
+  replications: 500
+  bootstrap_replications: 2000
+
+benchmark:
+  asset_counts: [32, 64, 128, 256, 512]
+  repetitions: 200
+  warmups: 20
+
+vlstar:
+  feature_volatility_window: 21
+  feature_correlation_window: 63
+  covariance_window: 504
+  lags: 1
+  ridge: 0.0001
+  gamma_grid: [0.5, 1.0, 2.0, 5.0, 10.0]
+  threshold_quantiles: [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]
+  probability_bands: [0.35, 0.65]
+  probability_change_trigger: 0.20
+  minimum_rebalance_gap: 5
+  refit_interval: 63
+  high_regime_risk_scale: 0.80
+
+backtest:
+  start: "2010-01-01"
+  covariance_lookback: 252
+  rebalance_frequency: monthly
+  transaction_cost_bps: 10.0
+  annualization: 252
+  risk_free_rate: 0.0
